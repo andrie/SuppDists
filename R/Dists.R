@@ -1,3 +1,9 @@
+#' Internal SuppDists function.
+#' 
+#' This is not to be called by the user.
+#' 
+#' @aliases makeStatList
+#' @keywords distribution internal
 makeStatList <- function (head, mn, med, var, mod, third, fourth, dig) {
     sd <- sqrt(var)
     skew <- sign(third) * abs(third)/sd^3
@@ -45,20 +51,5 @@ normOrder <- function (N) {
   }
 
 
-rMWC1019 <- function (n, new.start = FALSE, seed = 556677) {
-    n <- if (length(n) == 1) 
-      n
-    else length(n)
-    .C("MWC1019R", val = double(n), as.integer(n), as.integer(new.start), 
-       as.integer(seed),PACKAGE="SuppDists")$val
-  }
 
-
-rziggurat <- function (n, normal = TRUE, new.start = FALSE, seed = 556677) {
-    n <- if (length(n) > 1) 
-      length(n)
-    else n
-    .C("ziggR", val = double(n), as.integer(n), as.integer(normal), 
-       as.integer(new.start), as.integer(seed),PACKAGE="SuppDists")$val
-  }
 

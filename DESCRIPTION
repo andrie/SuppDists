@@ -13,16 +13,5 @@ Description: Ten distributions supplementing those built into R.
     included.
 License: GPL-2|GPL-3
 Repository: CRAN
+URL: https://github.com/andrie/SuppDists
 NeedsCompilation: yes
-Collate:
-    'Dists.R'
-    'Friedman.R'
-    'ghyper.R'
-    'invGauss.R'
-    'Johnson.R'
-    'Kendall.R'
-    'KruskalWallis.R'
-    'maxFratio.R'
-    'normScore.R'
-    'Pearson.R'
-    'Spearman.R'
