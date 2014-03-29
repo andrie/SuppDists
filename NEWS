@@ -1,0 +1,16 @@
+SuppDists 1.1-91 (Release date: 2013-03-28)
+==============
+
+Note:
+* During March, 2014 the SuppDists package was archived from CRAN, because the original author (Bob Wheeler) became unresponsive to email.
+* Andrie de Vries assumed the role of maintainer.
+
+
+New functionality
+* None
+
+Changes:
+* No external changes to package functionality
+* Internally, the package was modified to use in-line documentation (using Roxygen)
+* Any changes to functionality or function availability are non-intentional
+* Some minor modifications to documentation, e.g. inclusion of top-level package documentation
