@@ -62,9 +62,9 @@
 #' @examples
 #' 
 #' pinvGauss(1, 1, 16)
-#' pinvGauss(c(.65,1,1.45), 1, 16) ## approximately 5% 50% and 95%
-#' pars<-sinvGauss(1, 16)
-#' plot(function(x)dinvGauss(x,1, 16),pars$Mean-3*pars$SD,pars$Mean+3*pars$SD)
+#' pinvGauss(c(.65, 1, 1.45), 1, 16) ## approximately 5% 50% and 95%
+#' pars <- sinvGauss(1, 16)
+#' plot(function(x)dinvGauss(x,1, 16), pars$Mean - 3*pars$SD, pars$Mean + 3*pars$SD)
 #' 
 
 #' @export

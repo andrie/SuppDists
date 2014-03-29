@@ -31,9 +31,9 @@ This implementation running in is approximately three times
 as fast as `rnorm()`.
 }
 \examples{
-rziggurat(50,new.start=TRUE)
+rziggurat(50, new.start=TRUE)
 rziggurat(50)
-rziggurat(50,new.start=TRUE)
+rziggurat(50, new.start=TRUE)
 }
 \author{
 Bob Wheeler \email{bwheelerg@gmail.com}

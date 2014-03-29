@@ -27,7 +27,7 @@
 #' @examples
 #' 
 #' 
-#' rMWC1019(50,new.start=TRUE,seed=492166)
+#' rMWC1019(50, new.start=TRUE, seed=492166)
 #' rMWC1019(50)
 #' 
 #' @export

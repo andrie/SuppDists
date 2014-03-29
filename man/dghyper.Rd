@@ -178,21 +178,21 @@ tghyper(a=5.9, k=-0.5, N=-0.7) 		## type IIIB
 tghyper(a=-1, k=-1, N=5) 		## type IV Generalized Waring
 
 sghyper(a=-1, k=-1, N=5)
-plot(function(x)dghyper(x,a=-1,k=-1,N=5),0,5)
+plot(function(x)dghyper(x, a=-1, k=-1, N=5), 0, 5)
 
-#Fisher's exact test: contingency table with rows (1,3),(3,1)
-pghyper(1,4,4,8)
-pghyper(3,4,4,8,lower.tail=FALSE)
+# Fisher's exact test: contingency table with rows (1, 3), (3, 1)
+pghyper(1, 4, 4, 8)
+pghyper(3, 4, 4, 8, lower.tail=FALSE)
 
 
 
-#Beta-binomial applications:
+# Beta-binomial applications:
 
-#Application examples:
-tghyper(-4,3,-6)
-pghyper(2,-4,3,-6,lower=FALSE)
-pghyper(0,-2,10,-101)
-sghyper(-1,95,-6)$Mean+1
+# Application examples:
+tghyper(-4, 3, -6)
+pghyper(2, -4, 3, -6, lower=FALSE)
+pghyper(0, -2, 10, -101)
+sghyper(-1, 95, -6)$Mean+1
 }
 \author{
 Bob Wheeler \email{bwheelerg@gmail.com}

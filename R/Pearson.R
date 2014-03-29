@@ -19,7 +19,7 @@
 #' pPearson(0.5, N=10)
 #' pPearson(q=0.5, N=10, rho=0.3) 
 #' sPearson(N=10)
-#' plot(function(x)dPearson(x,N=10,rho=0.7),-1,1)
+#' plot(function(x) dPearson(x, N=10, rho=0.7), -1, 1)
 #' 
 #' @export
 

@@ -19,9 +19,9 @@
 #' @keywords distribution
 #' @examples
 #' 
-#' rziggurat(50,new.start=TRUE)
+#' rziggurat(50, new.start=TRUE)
 #' rziggurat(50)
-#' rziggurat(50,new.start=TRUE)
+#' rziggurat(50, new.start=TRUE)
 #' 
 #' @export
 
