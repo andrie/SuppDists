@@ -1,6 +1,6 @@
 Package: SuppDists
-Version: 1.1-92
-Date: 2013-03-29
+Version: 1.1-93
+Date: 2013-04-05
 Title: Supplementary distributions
 Authors@R: c(person("Andrie", "de Vries", role="cre",
     email="apdevries@gmail.com"),
