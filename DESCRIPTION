@@ -1,10 +1,11 @@
 Package: SuppDists
-Version: 1.1-93
-Date: 2013-04-05
+Version: 1.1-94
+Date: 2013-04-18
 Title: Supplementary distributions
 Authors@R: c(person("Andrie", "de Vries", role="cre",
     email="apdevries@gmail.com"),
     person("Bob", "Wheeler", role = "aut", email="bwheelerg@gmail.com"))
+Author: Bob Wheeler
 Description: Ten distributions supplementing those built into R.
     Inverse Gauss, Kruskal-Wallis, Kendall's Tau, Friedman's chi
     squared, Spearman's rho, maximum F ratio, the Pearson product
