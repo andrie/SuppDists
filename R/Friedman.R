@@ -2,7 +2,7 @@
 #' 
 #' Density, distribution function, quantile function, random generator and summary function for Friedman's chi square.
 #' 
-#' The Freidman chi-squared is used for nonparametric ANOVA. The data in N rows of an \eqn{N \times r}{N x r} table are ranked separately such that the ranks take the values from 1 to r in the N different rows. The distributions
+#' The Friedman chi-squared is used for nonparametric ANOVA. The data in N rows of an \eqn{N \times r}{N x r} table are ranked separately such that the ranks take the values from 1 to r in the N different rows. The distributions
 #' are obtained on the assumption that there is no relationship between the N rows.
 #' 
 #' Formulae:
@@ -27,13 +27,14 @@
 #' @aliases dFriedman pFriedman qFriedman rFriedman sFriedman
 #' @param x,q vector of non-negative quantities
 #' @param p vector of probabilities
-#' @param n number of values to generate. If n is a vector, \code{length(n)} values will be generated
+#' @param n number of values to generate. If n is a vector, `length(n)` values will be generated
 #' @param r vector of number of treatments
 #' @param N (N >= 2) vector of number of replications of each treatment
 #' @param log,log.p logical vector; if TRUE, probabilities p are given as log(p)
 #' @param lower.tail logical vector; if TRUE (default), probabilities are
 #' \eqn{P[X <= x]}, otherwise, \eqn{P[X > x]}
-#' @return The output values conform to the output from other such functions in \code{dFriedman()} gives the density, \code{pFriedman()} the distribution function and \code{qFriedman()} its inverse. \code{rFriedman()} generates random numbers. \code{sFriedman()} produces a list containing parameters corresponding to the arguments -- mean, median, mode, variance, sd, third cental moment, fourth central moment, Pearson's skewness, skewness, and kurtosis.
+#' 
+#' @return The output values conform to the output from other such functions in `Friedman()` gives the density, `pFriedman()` the distribution function and `qFriedman()`its inverse.  `rFriedman()` generates random numbers. `sFriedman()` produces a list containing parameters corresponding to the arguments -- mean, median, mode, variance, sd, third cental moment, fourth central moment, Pearson's skewness, skewness, and kurtosis.
 #' @note Exact calculations are made for the following values of the parameters:
 #' 
 #' \tabular{ll}{ r \tab N \cr 2 \tab 100 \cr 3 \tab 30 \cr 4 \tab 15 \cr 5 \tab
@@ -48,13 +49,13 @@
 #' @author Bob Wheeler \email{bwheelerg@@gmail.com}
 #' @references 
 #' Kendall, M. and Smith, B.B. (1939). The problem of m rankings.
-#' \emph{Ann. Math. Stat.} \bold{10.} 275-287.
+#' *Ann. Math. Stat.* **10.** 275-287.
 #' 
 #' Iman, R.L. and Davenport, J.M. (1980). Approximations of the critical region of the Friedman statistic. 
-#' \emph{Comm. Stat. Theor. Meth.} \bold{A9(6).} 571-595.
+#' *Comm. Stat. Theor. Meth.* **A9(6).** 571-595.
 #' 
 #' Odeh, R.E. (1977). Extended tables of the distribution of Friedman's S-statistic in the two-way layout. 
-#' \emph{Commun. Statist.-Simula. Computa.} \bold{B6(1).} 29-48.
+#' *Commun. Statist.-Simula. Computa.* **B6(1).** 29-48.
 #' @keywords distribution
 #' @examples
 #' pFriedman(2, r=5, N=10)

@@ -26,7 +26,7 @@
 #' @param lambda vector real and non-negative parameter
 #' @param log,log.p logical vector; if TRUE, probabilities p are given as log(p)
 #' @param lower.tail logical vector; if TRUE (default), probabilities are \eqn{P[X <= x]}, otherwise, \eqn{P[X > x]}
-#' @return The output values conform to the output from other such functions in R. \code{dinvGauss()} gives the density, \code{pinvGauss()} the distribution function and \code{qinvGauss()} its inverse. \code{rinvGauss()} generates random numbers. \code{sinvGauss()} produces a list containing parameters corresponding to the arguments -- mean, median, mode, variance, sd, third cental moment, fourth central moment, Pearson's skewness, skewness, and kurtosis.
+#' @return The output values conform to the output from other such functions in R. `dinvGauss()` gives the density, `pinvGauss()` the distribution function and `qinvGauss()` its inverse. `rinvGauss()` generates random numbers. `sinvGauss()` produces a list containing parameters corresponding to the arguments -- mean, median, mode, variance, sd, third cental moment, fourth central moment, Pearson's skewness, skewness, and kurtosis.
 #' @author Bob Wheeler \email{bwheelerg@@gmail.com}
 #' @references 
 #' Ckhhikara, R.S. and Folks, J.L. (1977) The inverse Gaussian distribution as a lifetime model. 

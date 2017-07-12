@@ -35,7 +35,7 @@ rghyper(n, a, k, N)
 tghyper(a, k, N)
 }
 \arguments{
-\item{x, q, n}{vector of non-negative \bold{integer} quantities}
+\item{x, q, n}{vector of non-negative \strong{integer} quantities}
 
 \item{a}{vector of real values giving the first column total}
 
@@ -80,20 +80,19 @@ The Kemp and Kemp types IIA and IIIA are known as:
 }
 
 The advantages of the conditional argument are considerable. Consider a few examples:
-
 \enumerate{
 \item Future event: Consider two events which have occurred u and v times respectively.  The distribution function of x occurrences of the first event in a sample of k new trials is calculated.  Here a = -u-1, and N = -u-v-2.
-
-Example: Suppose Toronto has won 3 games and Atlanta 1 in the World Series. What is the probability that Toronto will win the series by taking 2 or more of the remaining 3 games?
-
+\itemize{
+\item Example: Suppose Toronto has won 3 games and Atlanta 1 in the World Series. What is the probability that Toronto will win the series by taking 2 or more of the remaining 3 games?
+}
 \item Exceedance: Consider two samples of size m and k, then the distribution function of x, the number of elements out of k which exceed the r th largest element in the size m sample is calculated.  Here a = -r, and N = -m-1.
-
-Example: Suppose that only once in the last century has the high-water mark at the St. Joe bridge exceeded 12 feet, what is the probability that it will not do so in the next ten years?
-
+\itemize{
+\item Example: Suppose that only once in the last century has the high-water mark at the St. Joe bridge exceeded 12 feet, what is the probability that it will not do so in the next ten years?
+}
 \item Waiting time: Consider an urn with T balls, m of which are white, and that drawing without replacement is continued until w white balls are obtained, then the distribution function of x, the number of balls in excess of w that must be drawn is desired.  Here a = -w , N = -m-1, and k = T - m.
-
-Example: Suppose a lot of 100 contains 5 defectives. What is the mean number of items that must be inspected before a defective item is found?
-
+\itemize{
+\item Example: Suppose a lot of 100 contains 5 defectives. What is the mean number of items that must be inspected before a defective item is found?
+}
 \item Mixture: Suppose x has a binomial distribution with parameter p, and number of trials k.  Suppose that p is not fixed, but itself distributed like a beta variable with parameters A and B, then the distribution of x is calculated with a = -A and N = -A -B.
 }
 
@@ -141,14 +140,11 @@ pghyper(0, -2, 10, -101)
 sghyper(-1, 95, -6)$Mean+1
 }
 \references{
-Johnson, N.L., Kotz, S. and Kemp, A. (1992)
-\emph{Univariate discrete distributions}. Wiley, N.Y.
+Johnson, N.L., Kotz, S. and Kemp, A. (1992) \emph{Univariate discrete distributions}. Wiley, N.Y.
 
-Kemp, C.D., and Kemp, A.W. (1956). Generalized hypergeometric distributions.
-\emph{Jour. Roy. Statist. Soc. B.} \bold{18.} 202-211.
+Kemp, C.D., and Kemp, A.W. (1956). Generalized hypergeometric distributions. \emph{Jour. Roy. Statist. Soc. B.} \strong{18.} 202-211.
 
-Xekalaki, E. (1983). The univariate generalized Waring distribution in relation to accident theory: proneness, spells or contagion.
-\emph{Biometrics.} \bold{39.} 887-895.
+Xekalaki, E. (1983). The univariate generalized Waring distribution in relation to accident theory: proneness, spells or contagion. \emph{Biometrics.} \strong{39.} 887-895.
 }
 \author{
 Bob Wheeler \email{bwheelerg@gmail.com}
