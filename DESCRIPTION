@@ -1,7 +1,7 @@
 Package: SuppDists
 Version: 1.1-94
 Date: 2013-04-18
-Title: Supplementary distributions
+Title: Supplementary Distributions
 Authors@R: c(person("Andrie", "de Vries", role="cre",
     email="apdevries@gmail.com"),
     person("Bob", "Wheeler", role = "aut", email="bwheelerg@gmail.com"))
@@ -17,3 +17,5 @@ License: GPL-2|GPL-3
 Repository: CRAN
 URL: https://github.com/andrie/SuppDists
 NeedsCompilation: yes
+RoxygenNote: 6.0.1
+Roxygen: list(markdown = TRUE)

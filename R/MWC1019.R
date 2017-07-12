@@ -32,7 +32,7 @@
 #' 
 #' @export
 
-rMWC1019 <- function (n, new.start = FALSE, seed = 556677) {
+rMWC1019 <- function (n, new.start = FALSE, seed = 556677L) {
   n <- if (length(n) == 1) 
     n
   else length(n)

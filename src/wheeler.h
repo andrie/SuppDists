@@ -2,8 +2,6 @@
 #if !defined(__wheeler_h)
 #define __wheeler_h
 
-
-
 #define UCHAR unsigned char
 #define USHORT unsigned short int
 #define UINT unsigned int
@@ -22,8 +20,8 @@
 
 #define maxm(a,b) (((a)>(b))?(a):(b))
 #define minm(a,b) (((a)<(b))?(a):(b))
-#define absm(a) (((a)<0)?-(a):(a))
-#define signm(a) (((a)>0)?1:(((a)<0)?-1:0))
-#define SQR(A)   ((A)*(A))
+#define absm(a)   (((a)<0)?-(a):(a))
+#define signm(a)  (((a)>0)?1:(((a)<0)?-1:0))
+#define SQR(A)    ((A)*(A))
 
 #endif // Sentinal 

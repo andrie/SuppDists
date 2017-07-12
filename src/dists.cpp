@@ -1,16 +1,17 @@
-#include "wheeler.h"
+
+
 #include <math.h>
 #include <float.h>
-//Hornik replaced <new.h> with <new> and then inserted 
-// std::set_new_handler(freeStoreException); on line 2283 (March 2008)
-#include <new>  
+//# Hornik replaced <new.h> with <new> and then inserted
+//# std::set_new_handler(freeStoreException); on line 2283 (March 2008)
+#include <new>
 #include <R.h>
 #include <Rmath.h>
 
 #include "dists.h"
 #include "datatabs.h"
 
-// SuppDists by Robert E. Wheeler, March 2001
+//# SuppDists by Robert E. Wheeler, March 2001
 
 bool DllMain(void)					 
 {
@@ -1081,6 +1082,17 @@ DISTS_API void dKendallR(
 /* qkendall -- Upper tail of Kendall's tau
 	       Retruns Pr(T>=tau|n).*/
 
+double  qkendall(
+	int n,
+	double tau
+)
+{
+	if (tau>1 || tau <-1 || n<2)
+		return NA_REAL;
+
+   return (1.0-pkendall(n,tau));
+}
+
 DISTS_API void uKendallR(
 	int *nip,
 	double *taup,
@@ -1093,17 +1105,6 @@ DISTS_API void uKendallR(
 
 	for (i=0;i<N;i++)
 		valuep[i]=qkendall(nip[i],taup[i]);
-}
-
-double  qkendall(
-	int n,
-	double tau
-)
-{
-	if (tau>1 || tau <-1 || n<2)
-		return NA_REAL;
-
-   return (1.0-pkendall(n,tau));
 }
 
 /* xkendall -- returns smallest tau such that pr<=Pr(T<=tau|n). */
@@ -6081,8 +6082,8 @@ ULONG MWC1019(void){
 	ULONG t;
 	int	i = endQ-1; 
 
-	t = 147669672L*Q[i] + Q[endQ]; 
-	Q[endQ] = (t>>32);
+	t = 147669672UL*Q[i] + Q[endQ]; 
+	Q[endQ] = (t>>16);
 	if(i>0) 
 		return(Q[i--] = t);
 	i = endQ-1;  

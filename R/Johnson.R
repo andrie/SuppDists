@@ -114,6 +114,7 @@ dJohnson <- function (x, parms, log = FALSE) {
 
 
 #' @export
+#' @importFrom stats quantile var
 #' @rdname dJohnson
 JohnsonFit <-   function (t, moment = "quant") {
   firstChar=substring(moment,1,1)
